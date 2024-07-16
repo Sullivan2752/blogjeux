@@ -18,6 +18,7 @@
                 <li><a href="page_nouveautés.html">Nouveautés</a></li>
                 <li><a href="page_streamers.html">streameurs</a></li>
                 <li><a href="page_contact.html">Contact</a></li>
+                <li><a href="page_communautés.html">communautés</a></li>
             </ul>
         </nav>
     </header>
@@ -25,7 +26,32 @@
         <section id="about">
             <h2>À propos de ce blog</h2>
             <p>Bienvenue sur notre blog dédié aux jeux. Ce blog a été créé par des passionnés du jeu vidéo qui souhaitent partager leurs connaissances, astuces et actualités sur ces jeux captivant. Notre objectif est de fournir une ressource utile et amusante auprès de  tous les joueurs , qu'ils soient débutants ou experts. Ci besoin veulliez contacter notre équipe sur le site internet(contact) ou sur les réseaux instagram et tiktok  </p>
-            <img src="" alt="">
+            <div class="like-button">
+                <button class="like-button" onclick="toggleLike(this)">
+                    <span class="like-icon">❤</span>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="like-button" onclick="toggleLike(this)">
+                    <span class="like-icon">👍</span>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="like-button" onclick="toggleLike(this)">
+                    <span class="like-icon">😂</span>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="like-button" onclick="toggleLike(this)">
+                    <span class="like-icon">😮</span>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="like-button" onclick="toggleLike(this)">
+                    <span class="like-icon">😢</span>
+                    <span class="like-count">0</span>
+                </button>
+                <button class="like-button" onclick="toggleLike(this)">
+                    <span class="like-icon">😡</span>
+                    <span class="like-count">0</span>
+                </button>
+                </div>
         </section>
         <section id="team">
             <h2>Notre équipe</h2>
@@ -50,5 +76,6 @@
     <footer>
         <p>&copy; 2024 Blog sur Rust. Tous droits réservés.</p>
     </footer>
+    <script src="script.js"></script> 
 </body>
 </html>

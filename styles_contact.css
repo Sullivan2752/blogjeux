@@ -167,3 +167,36 @@ footer {
     bottom: 0;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
+.like-button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.like-button:hover {
+    background-color: #f0f0f0;
+}
+
+.like-icon {
+    color: #888;
+    font-size: 24px;
+    margin-right: 5px;
+    transition: color 0.3s;
+}
+
+.like-count {
+    font-size: 18px;
+}
+
+.liked .like-icon {
+    color: red;
+}
+
+.liked .like-count {
+    font-weight: bold;
+}
