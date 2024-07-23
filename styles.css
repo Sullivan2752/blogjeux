@@ -184,3 +184,17 @@ footer {
         margin-right: 1px;
     } 
 }
+@media (max-width:810px){
+    .header{
+        border-radius: 1px;
+        flex-direction: column;
+        padding: 1px ;
+    } 
+    .news-item {
+        border-radius: 1px;
+        flex-direction: column;
+        padding: 1px 2px;
+        
+    }
+    
+}  
