@@ -163,3 +163,27 @@ footer {
 .liked .like-count {
     font-weight: bold;
 }
+@media (max-width:810px){
+    .like-button{
+        border-radius: 1px;
+        padding: 1px 2px;
+    } 
+    .like-icon {
+        font-size: 15px;
+        margin-right: 1px;
+    } 
+}
+@media (max-width:810px){
+    .header{
+        border-radius: 1px;
+        flex-direction: column;
+        padding: 1px ;
+    } 
+    .news-item {
+        border-radius: 1px;
+        flex-direction: column;
+        padding: 1px 2px;
+        
+    }
+    
+}  
