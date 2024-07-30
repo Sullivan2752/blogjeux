@@ -1,0 +1,50 @@
+// Données pour le diagramme en nuage de points
+const data = {
+    datasets: [{
+        label: 'Nuage de Points',
+        data: [
+           
+            { x: 254, y: 255 },
+            { x: 741, y: 750},
+            { x: 733, y: 740 },
+            { x: 957, y: 960 },
+            { x: 35, y: 40 },
+            { x: 921, y: 930 },
+            { x: 561, y: 570 },
+            { x: 597, y: 600 }
+        ],
+        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        pointRadius: 5
+    }]
+};
+
+// Configuration du diagramme
+const config = {
+    type: 'scatter',
+    data: data,
+    options: {
+        scales: {
+            x: {
+                type: 'linear',
+                position: 'bottom',
+                title: {
+                    display: true,
+                    text: 'nombre de vues obtenu'
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'nombre de vues'
+                }
+            }
+        }
+    }
+};
+
+// Rendu du diagramme dans le canvas
+window.onload = function() {
+    const ctx = document.getElementById('scatterPlot').getContext('2d');
+    new Chart(ctx, config);
+};
